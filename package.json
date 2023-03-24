@@ -1,0 +1,14 @@
+{
+  "name": "eleventy-foor-loop-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "preview": "npx vite preview",
+    "dev": "npx @11ty/eleventy --serve --incremental",
+    "build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.9.4"
+  }
+}

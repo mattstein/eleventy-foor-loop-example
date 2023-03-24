@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sad Trombone</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!-- renders three div elements -->
+    <div webc:for="item of [1, 2, 3]" @text="item"></div>
+
+    <!-- access the loop index (zero-indexed) -->
+    <div webc:for="(item, index) of [1, 2, 3]" @text="index"></div>
+
+    <!-- name these whatever you’d like -->
+    <div webc:for="myItem of [1, 2, 3]" @text="myItem"></div>
+    <div webc:for="(myItem, myIndex) of [1, 2, 3]" @text="myIndex"></div>
+
+    <!-- any iterable -->
+    <div webc:for="item of new Set([1, 2, 3])" @text="item"></div>
+  </body>
+</html>
